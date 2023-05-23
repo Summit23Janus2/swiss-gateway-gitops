@@ -1,0 +1,15 @@
+app:
+  name: swiss-poi-gateway-app
+  namespace: swiss
+  cluster: .apps.summit23blues.6mbu.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23Janus2/swiss-gateway
+  org: Summit23Janus2
+  name: swiss-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: swiss/poi-gateway-app
+  tag: latest
